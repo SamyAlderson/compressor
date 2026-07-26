@@ -1,15 +1,16 @@
-__pycache__/
-*.pyc
-.pytest_cache/
-.env
-*.egg-info/
-dist/
-build/
-.venv/
+# .gitignore
+# ignore node_modules and npm cache
 node_modules/
+.npm
+
+# ignore rust artifacts
 target/
-bin/
-obj/
-*.o
-*.so
-*.dylib/
+
+# ignore IDE files
+.idea/
+.vscode/
+
+# ignore other stuff
+*.log
+*.tmp
+*.swp
