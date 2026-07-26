@@ -1,16 +1,23 @@
 # .gitignore
-# ignore node_modules and npm cache
-node_modules/
-.npm
 
-# ignore rust artifacts
+# ignore node_modules and yarn.lock
+node_modules/
+yarn.lock
+
+# ignore rust target dir
 target/
+
+# ignore build dir
+build/
 
 # ignore IDE files
 .idea/
 .vscode/
 
+# ignore docker files
+docker-compose.yml
+docker/Dockerfile
+
 # ignore other stuff
 *.log
 *.tmp
-*.swp
