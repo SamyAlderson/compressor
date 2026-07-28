@@ -1,23 +1,27 @@
 # .gitignore
-
-# ignore node_modules and yarn.lock
+# ignore node_modules and npm cache
 node_modules/
-yarn.lock
+npm-debug.log
+npm-debug.log.*
 
-# ignore rust target dir
+# ignore rust artifacts
 target/
 
-# ignore build dir
-build/
+# ignore python cache
+.cache
+__pycache__/
 
 # ignore IDE files
 .idea/
 .vscode/
 
-# ignore docker files
+# ignore docker stuff
 docker-compose.yml
-docker/Dockerfile
+docker-compose.yaml
+docker/
 
 # ignore other stuff
-*.log
-*.tmp
+.env
+config.json
+config.yaml
+config.yml
